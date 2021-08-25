@@ -1,0 +1,346 @@
+/*Global=============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(243, 243, 243, 0.65);
+}
+
+.container {
+    width: min(90vw, 900px);
+    margin: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Main phone=illustration=======================*/
+.phone-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1.2rem 3rem 0;
+    height: 610px;
+    width: 420px;
+    background-image: url(img/phone-instagram.png);
+}
+
+#slider {
+    width: 118px;
+    height: 408px;
+    position: relative;
+}
+
+#slider img {
+    opacity: 0;
+    width: 240px;
+    height: 425px;
+    position: absolute;
+    transition: opacity 3000ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+/*Main login=======================*/
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 350px;
+    height: 606px;
+}
+
+.group-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: 380px;
+    padding: 1rem;
+    margin: 5px;
+    border: 1px solid rgba(211, 211, 211, 0.842);
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem;
+    margin: 5px;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 25rem;
+}
+
+.logo {
+    margin-bottom: 35px;
+    padding-top: 0.8em;
+}
+
+.logo img {
+    width: 11rem;
+    height: 3rem;
+}
+
+/*login form=======================*/
+.input-field {
+    position: relative;
+    
+}
+
+.input-field input {
+    width: 17rem;
+    height: 2.3rem;
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 12px;
+    background-color:  rgba(243, 243, 243, 0.507);;
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+form input:focus {
+   border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.input-field input::placeholder {
+    opacity: 0.8;
+}
+
+form input[type="submit"] {
+    background-color:  #0095f6;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 17rem;
+    height: 2rem;
+    border-color: transparent;
+    border-radius: 0.3rem;
+}
+
+form .option {
+    height: 1px;
+    background-color: #333;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    opacity: 0.3;
+}
+
+form .option span {
+    background-color: white;
+    position: relative;
+    top: -0.5em;
+    padding: 0 10px;
+}
+
+/*Login facebook=======================*/
+.login-facebook {
+    margin: 35px 0;
+    text-align: center;
+    
+}
+
+.login-facebook a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(6, 6, 138);
+    opacity: 0.9;
+}
+
+.login-facebook i {
+    color: rgb(10, 10, 70);
+    font-size: 18px;
+    margin-right: 4px;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.login-facebook p {
+    margin-top: 20px;
+
+}
+
+/*Creat account=======================*/
+.creataccount {
+    font-size: 12px;
+}
+
+.creataccount a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0095f6;
+}
+
+/*Get the app=======================*/
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.get-the-app p {
+    font-size: 14px;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 8.5rem;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+    margin-left: 20px;
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+    margin-left: 0;
+}
+
+/*Footer=======================*/
+.footer {
+    width: min(90vw, 700px);
+    margin: auto;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 45px;
+}
+
+.links {
+    margin: 3px 8px;
+}
+
+.links a {
+    color: rgba(128, 128, 128, 0.753);
+    text-align: center;
+}
+
+.select {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.781);
+}
+
+.select select {
+    border: none;
+    outline: transparent;
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.89);
+    margin-right: 10px;
+}
+
+/*Media queries=======================*/
+@media (max-width: 875px) {
+    .container {
+        width: min(90vw, 800px);
+    }
+
+    .login {
+        margin-top: 3rem;
+    }
+
+    .phone-illustration{
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media(max-width: 350px) {
+    .container { 
+        width: 310px;
+        margin: auto;
+    }
+
+    .group-login {
+        width: 80%;
+    }
+    
+    .group {
+        width: 80%;
+    }
+
+    .input-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-field input {
+        width: 10rem;
+    }
+
+    form input[type="submit"] {
+        width: 10rem;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .download {
+        width: 310px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-download {
+        width: 6rem;
+        margin: 5px;
+    }
+}
